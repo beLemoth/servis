@@ -1,0 +1,13 @@
+// PRODUCTS SECTION
+
+section.products
+	.container-wrap
+		h2 Наша продукция
+
+		.products-wrap
+			.product-item
+				-
+				each item, name in prodList
+					each sizes, desc in item
+						img.product-item__img(src="./assets/img/prod-"+ name + ".png" alt=""+ desc)
+						.product-item__name= desc

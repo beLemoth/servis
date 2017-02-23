@@ -1,0 +1,25 @@
+// PRODUCTS LIST SECTION
+
+section.products-list
+
+	h2 Наша продукция
+
+	.container-wrap
+
+		.products-list-tables
+			-
+			each item, name in prodList
+				each sizes, desc in item
+					table.produts-list__table(id="#table-"+ name)
+						caption= desc
+						thead
+							tr
+								th Наименование
+								th Размер
+
+						each size in sizes
+							tr
+								td= desc
+								td= size
+
+
