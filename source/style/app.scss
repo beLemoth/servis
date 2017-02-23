@@ -9,15 +9,17 @@
 
 /* variables */
 
-$logo-font: 'Shirota', sans-serif;
 $main-font: 'OswaldRegular', sans-serif;
 $bold-font: 'OswaldBold', sans-serif;
+$demi-font: 'OswaldDemibold', sans-serif;
+$med-font: 'OswaldMedium', sans-serif;
 
 $header-bg-color: #5D4037;
 $light-sec-color: #D7CCC8;
 
 $grey-text: #bdbdbd;
 $dark-text: #212121;
+$white-text: #ffffff;
 
 /* global settings */
 
@@ -40,15 +42,25 @@ h1 {
 }
 
 h2 {
+	text-transform: uppercase; text-align: center; position: relative;
+	@include font-type($dark-text, $bold-font, 36px, 2, 0);
+	margin-bottom: 50px;
 
+	&:after {
+		content: '';
+		position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+		width: 200px; margin: auto;
+		border-bottom: 3px solid $dark-text;
+	}
 }
 
 h3 {
-
+	@include font-type($dark-text, $bold-font, 20px, 1.5, 0);
+	text-transform: uppercase;
 }
 
 p {
-	@include font-type($dark-text, $bold-font, 18px, 1.5, 0);
+	@include font-type($dark-text, $main-font, 18px, 1.5, 0);
 }
 
 
@@ -56,3 +68,11 @@ p {
 
 @import 'common/sections/header';
 @import 'common/sections/intro-section';
+@import 'common/sections/about-section';
+@import 'common/sections/products-section';
+@import 'common/sections/gallery-section';
+
+@import 'common/sections/contacts-section';
+@import 'common/sections/footer';
+
+

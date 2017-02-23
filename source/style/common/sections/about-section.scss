@@ -1,0 +1,35 @@
+// ABOUT SECTION
+
+.about {
+
+	background-color: $header-bg-color;
+	padding: 50px 0;
+	
+	&-desc {
+		@extend .clearfix;
+
+		&:nth-child(even) {
+			.about-desc__image {
+				float: right;
+			}
+			.about-desc__text {
+				padding-top: 100px;
+			}
+		}
+		&__image {
+			float: left; width: 50%;
+			padding: 20px 80px;
+
+
+			&_item {
+				width: 100%;
+			}
+		}
+		&__text {
+			width: 50%; float: left;
+			text-align: left;
+			padding: 60px 80px 0;
+			@include font-type($white-text, $main-font, 18px, 1.6, 0.8px);
+		}
+	}
+}

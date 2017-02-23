@@ -2,11 +2,13 @@
 
 .intro {
 	position: relative;
-	height: 400px;
+	height: 300px;
 	background-color: $light-sec-color;
+
 	.container-wrap {
-		background: url('../img/intro-bg.png') 15px top no-repeat;
+		background: url('../img/intro-bg.png') 15px -80px no-repeat;
 		height: 100%;
+		padding-top: 60px;
 	}
 	&__desc {
 		text-align: right;
@@ -16,7 +18,7 @@
 		}
 
 		&_p {
-			font-size: 28px;
+			font-size: 24px;
 			margin: 0;
 		}
 	}

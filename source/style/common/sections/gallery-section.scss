@@ -1,0 +1,35 @@
+// GALLERY SECTION
+
+.gallery {
+
+	padding: 20px 0 80px;
+	background-color: $light-sec-color;
+
+	&-wrap {
+		@extend .clearfix;
+		margin: 0 -15px;
+	}
+
+	&-item {
+		width: 22.6%; float: left; height: 200px; overflow: hidden;
+		margin: 0 15px 15px;
+		background-color: $dark-text;
+		transition: box-shadow ease-out .2s;
+
+		&:hover {
+			
+			box-shadow: 5px 5px 5px 0px rgba(93,64,55,0.5);
+
+			.gallery-item__img {
+				opacity: .5;
+				transform: scale(1.1);
+			}
+		}
+
+		&__img {
+			height: 100%;
+			transition: all ease-in .3s;
+			cursor: pointer;
+		} 
+	}
+}

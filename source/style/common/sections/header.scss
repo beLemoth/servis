@@ -1,10 +1,9 @@
 // HEADER SECTION
 
 .header {
-	position: relative;
 	height: 240px;
-	z-index: 100;
 	&-top {
+		position: relative; z-index: 1000;
 		padding-top: 20px;
 		height: 160px;
 		background-color: $header-bg-color;
@@ -59,8 +58,10 @@
 	}
 
 	&-bottom {
+		position: relative; z-index: 100;
 		background-color: $light-sec-color;
 		.nav {
+			//background: url('../img/intro-bg.png') left top no-repeat;
 			@extend .clearfix;
 			&__list {
 				float: right;
@@ -94,5 +95,9 @@
 				}
 			}
 		}
+	}
+
+	.header-bottom-main {
+		background: url('../img/intro-bg.png') 15px top no-repeat;
 	}
 }

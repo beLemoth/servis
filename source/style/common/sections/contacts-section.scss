@@ -1,0 +1,29 @@
+// CONTACTS SECTION
+
+.contacts {
+	padding: 20px 0 80px;
+	background-color: $light-sec-color;
+
+	.container-wrap {
+		@extend .clearfix;
+	}
+
+	&-desc {
+		padding-top: 50px;
+		float: left; width: 50%;
+
+		&__firm {
+			@include font-type($dark-text, $main-font, 24px, 1.5, 0);
+		}
+		&__addr,
+		&__tel,
+		&__email {
+			&_text {
+				@include font-type($dark-text, $main-font, 18px, 1.5, 0);
+			}
+		}
+
+	}
+
+
+}	
