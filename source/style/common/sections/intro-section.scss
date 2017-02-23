@@ -1,0 +1,23 @@
+// INTRO SECTION
+
+.intro {
+	position: relative;
+	height: 400px;
+	background-color: $light-sec-color;
+	.container-wrap {
+		background: url('../img/intro-bg.png') 15px top no-repeat;
+		height: 100%;
+	}
+	&__desc {
+		text-align: right;
+
+		&_h1 {
+			margin: 0;
+		}
+
+		&_p {
+			font-size: 28px;
+			margin: 0;
+		}
+	}
+}	

@@ -3,11 +3,21 @@
 @import 'common/clearfix';
 
 /* local fonts */
-@include font-face('PoiretOneRegular', 'PoiretOneRegular');
+@include font-face('Shirota', 'Shirota');
+@include font-face('OswaldBold', 'OswaldBold');
+@include font-face('OswaldRegular', 'OswaldRegular');
 
 /* variables */
 
-$logo-font: 'PoiretOneRegular', sans-serif;
+$logo-font: 'Shirota', sans-serif;
+$main-font: 'OswaldRegular', sans-serif;
+$bold-font: 'OswaldBold', sans-serif;
+
+$header-bg-color: #5D4037;
+$light-sec-color: #D7CCC8;
+
+$grey-text: #bdbdbd;
+$dark-text: #212121;
 
 /* global settings */
 
@@ -20,10 +30,29 @@ html {
 	position: relative;
 }
 
-.container {
+.container-wrap {
 	width: 1300px; padding: 0 15px; margin: auto;
+}
+
+h1 {
+	@include font-type($dark-text, $bold-font, 48px, 1.5, 0);
+	text-transform: uppercase;
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+	@include font-type($dark-text, $bold-font, 18px, 1.5, 0);
 }
 
 
 /* import sections */
 
+@import 'common/sections/header';
+@import 'common/sections/intro-section';
