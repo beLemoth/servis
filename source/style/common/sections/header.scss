@@ -59,9 +59,7 @@
 
 	&-bottom {
 		position: relative; z-index: 100;
-		background-color: $light-sec-color;
 		.nav {
-			//background: url('../img/intro-bg.png') left top no-repeat;
 			@extend .clearfix;
 			&__list {
 				float: right;
@@ -98,6 +96,6 @@
 	}
 
 	.header-bottom-main {
-		background: url('../img/intro-bg.png') 15px top no-repeat;
+		background: url('../img/intro-bg.png') left top no-repeat;
 	}
 }

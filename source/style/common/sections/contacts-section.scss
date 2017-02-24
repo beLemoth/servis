@@ -2,7 +2,6 @@
 
 .contacts {
 	padding: 20px 0 80px;
-	background-color: $light-sec-color;
 
 	.container-wrap {
 		@extend .clearfix;
@@ -11,6 +10,8 @@
 	&-desc {
 		padding-top: 50px;
 		float: left; width: 50%;
+		text-align: right;
+		padding: 0 30px;
 
 		&__firm {
 			@include font-type($dark-text, $main-font, 24px, 1.5, 0);
@@ -23,6 +24,11 @@
 			}
 		}
 
+	}
+
+	&-map {
+		width: 50%; float: left;
+		padding: 0 30px; 
 	}
 
 

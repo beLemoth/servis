@@ -9,6 +9,7 @@
   "dependencies": {
     "jquery": "2.1.3",
     "bootstrap": "3.3.7",
-    "photobox": "1.9.9"
+    "photobox": "1.9.9",
+    "page-scroll-to-id": "^1.5.7"
   }
 }

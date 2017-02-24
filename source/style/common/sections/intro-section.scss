@@ -3,10 +3,9 @@
 .intro {
 	position: relative;
 	height: 300px;
-	background-color: $light-sec-color;
 
 	.container-wrap {
-		background: url('../img/intro-bg.png') 15px -80px no-repeat;
+		background: url('../img/intro-bg.png') left -80px no-repeat;
 		height: 100%;
 		padding-top: 60px;
 	}

@@ -5,9 +5,11 @@ section.gallery
 	h2 Наши работы
 
 	.container-wrap
-		.gallery-wrap
+		.gallery-wrap#gallery
 			-
 			each desc, idx in jobs
 				.gallery-item
-					img.gallery-item__img(src="./assets/img/gal-item-"+ (idx+1)+ ".jpg", alt="Работа "+ (idx+1))
+					a.gallery-item__link(href="assets/img/gallery/gal-item-"+ (idx+1)+ ".jpg", alt="Работа "+ (idx+1))
+						img.gallery-item__link_img(src="assets/img/gallery/min/gal-item-"+ (idx+1)+ ".jpg", alt="Работа "+ (idx+1), title=''+desc)
+
 

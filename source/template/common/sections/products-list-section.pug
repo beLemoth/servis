@@ -10,16 +10,16 @@ section.products-list
 			-
 			each item, name in prodList
 				each sizes, desc in item
-					table.produts-lits__table(id="#table-"+ name)
-						caption= desc
+					table.products-lits__table(id="#"+ name)
+						caption.products-lits__table_caption= desc
 						thead
-							tr
+							tr.head-col
 								th Наименование
 								th Размер
 
 						each size in sizes
-							tr
-								td= desc
-								td= size
+							tr.body-col
+								td.left-row= desc
+								td.right-row= size
 
 
