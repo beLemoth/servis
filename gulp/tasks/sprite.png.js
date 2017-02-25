@@ -10,9 +10,9 @@ module.exports = function() {
     var imgStream = spriteData.img
       .pipe($.gulp.dest($.config.root + '/assets/img'));
     var cssStream = spriteData.css
+      .pipe($.gp.csso())
       .pipe($.gulp.dest($.config.root + '/assets/css'));
     return $.merge(imgStream, cssStream);  
   });
 };
-
-  
+ 

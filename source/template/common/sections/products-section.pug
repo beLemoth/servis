@@ -8,7 +8,7 @@ section.products
 			-
 			each item, name in prodList
 				each sizes, desc in item
-					a.product-item.scroll2table(href="products.html#"+name)
+					a.product-item(href="products.html#"+name)
 						.product-item__img
 							img.product-item__img_item(src="./assets/img/prod-"+ name + ".png" alt=""+ desc)
 						.product-item__name= desc
