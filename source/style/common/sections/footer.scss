@@ -5,6 +5,10 @@
 
 	padding: 50px 0;
 	background-color: $header-bg-color;
+	height: $footer-height;
+
+	position: absolute; bottom: 0;
+	width: 100%;
 
 	&__logo {
 		width: 50%; float: left;

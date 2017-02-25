@@ -1,7 +1,7 @@
 // CONTACTS SECTION
 
 .contacts {
-	padding: 20px 0 80px;
+	padding: 20px 0 330px;
 
 	.container-wrap {
 		@extend .clearfix;
@@ -27,9 +27,17 @@
 	}
 
 	&-map {
-		width: 50%; float: left;
-		padding: 0 30px; 
+		width: 600px; height: 600px;
+		float: left;
+		padding: 0 30px;
+
+
+		#map {
+			border: 1px solid #5D4037; box-shadow: 5px 5px 5px 0px rgba(93,64,55,0.5);
+		}
 	}
+
+	
 
 
 }	

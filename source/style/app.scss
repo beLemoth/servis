@@ -1,6 +1,5 @@
-@import 'common/box-sizing';
-@import 'common/mixins';
-@import 'common/clearfix';
+@import 'common/*scss';
+@import 'common/mixins/*.scss';
 
 /* local fonts */
 @include font-face('Shirota', 'Shirota');
@@ -20,6 +19,8 @@ $light-sec-color: #D7CCC8;
 $grey-text: #bdbdbd;
 $dark-text: #212121;
 $white-text: #ffffff;
+
+$footer-height: 250px;
 
 /* global settings */
 
@@ -66,14 +67,6 @@ p {
 
 
 /* import sections */
-
-@import 'common/sections/header';
-@import 'common/sections/intro-section';
-@import 'common/sections/about-section';
-@import 'common/sections/products-section';
-@import 'common/sections/gallery-section';
-@import 'common/sections/products-list-section';
-@import 'common/sections/contacts-section';
-@import 'common/sections/footer';
+@import 'common/sections/*.scss'
 
 
