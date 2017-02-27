@@ -9,7 +9,8 @@
 .cssload-loader {
 	position: relative;
 	left: calc(50% - 31px);
-	top: calc(50% - 31px);
+	top: 50%;
+	margin-top: -31px;
 	width: 62px;
 	height: 62px;
 	border-radius: 50%;

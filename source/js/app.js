@@ -15,19 +15,19 @@
 	if ($('div').is('#map')) {
 		var map = new GMaps({
 	  		el: '#map',
-			lat: 52.79800,
-			lng: 27.54900,
+			lat: 52.79640,
+			lng: 27.54820,
 			width: '600px',
 			height: '600px',
 			zoom: 17			
 		});
 
 		map.addMarker({
-			lat: 52.79800,
-			lng: 27.54900,
+			lat: 52.79640,
+			lng: 27.54820,
 			title: 'ОДО "Сервис"',
 			infoWindow: {
-	  			content: '<p>ОДО "Сервис"</p>'
+	  			content: '<p>ОДО "Сервис" ул. Строителей, д.1Г</p>'
 			}
 		});
 	};

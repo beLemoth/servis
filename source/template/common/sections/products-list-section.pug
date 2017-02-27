@@ -16,10 +16,12 @@ section.products-list
 							tr.head-col
 								th Наименование
 								th Размер
+								th Стоимость
 
-						each size in sizes
+						each price, size in sizes
 							tr.body-col
-								td.left-row= desc
-								td.right-row= size
+								td.name-row= desc
+								td.size-row= size
+								td.price-row= price
 
 

@@ -17,8 +17,13 @@
 		@include font-type($grey-text, $bold-font, 48px, 1, 0);
 		text-transform: uppercase;
 		height: 150px;
-		background: url('../img/logo.png') center 90% no-repeat;
-		background-size: 18%;		
+		background: url('../img/logo.png') center no-repeat;
+		background-size: 22%;
+
+		&_link {
+			display: block; width: 140px; margin: auto;
+			height: 140px; 
+		}
 	}
 
 	&__info {
