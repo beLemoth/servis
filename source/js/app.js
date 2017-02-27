@@ -15,20 +15,16 @@
 	if ($('div').is('#map')) {
 		var map = new GMaps({
 	  		el: '#map',
-			lat: 52.7960695,
-			lng: 27.54349,
+			lat: 52.79800,
+			lng: 27.54900,
 			width: '600px',
 			height: '600px',
-			zoom: 17,
-			infoWindow: {
-	  			content: '<p>HTML Content</p>'
-			}
-			
+			zoom: 17			
 		});
 
 		map.addMarker({
-			lat: 52.7960695,
-			lng: 27.54349,
+			lat: 52.79800,
+			lng: 27.54900,
 			title: 'ОДО "Сервис"',
 			infoWindow: {
 	  			content: '<p>ОДО "Сервис"</p>'
