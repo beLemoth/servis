@@ -15,12 +15,14 @@ section.products-list
 						thead
 							tr.head-col
 								th Наименование
+								th Ед.измерения
 								th Размер
 								th Стоимость
 
 						each price, size in sizes
 							tr.body-col
 								td.name-row= desc
+								td.izm-row м.куб.
 								td.size-row= size
 								td.price-row= price
 
