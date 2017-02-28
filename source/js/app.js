@@ -17,7 +17,7 @@
 	  		el: '#map',
 			lat: 52.79640,
 			lng: 27.54820,
-			width: '600px',
+			width: '100%',
 			height: '600px',
 			zoom: 17			
 		});

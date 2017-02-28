@@ -8,8 +8,9 @@ section.gallery
 		.gallery-wrap#gallery
 			-
 			each desc, idx in jobs
-				.gallery-item
-					a.gallery-item__link(href="assets/img/gallery/gal-item-"+ (idx+1)+ ".jpg", alt="Работа "+ (idx+1))
-						img.gallery-item__link_img(src="assets/img/gallery/min/gal-item-"+ (idx+1)+ ".jpg", alt="Работа "+ (idx+1), title=''+desc)
+				.gallery-item-wrap
+					.gallery-item
+						a.gallery-item__link(href="assets/img/gallery/gal-item-"+ (idx+1)+ ".jpg", alt="Работа "+ (idx+1))
+							img.gallery-item__link_img(src="assets/img/gallery/min/gal-item-"+ (idx+1)+ ".jpg", alt="Работа "+ (idx+1), title=''+desc)
 
 

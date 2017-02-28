@@ -9,9 +9,13 @@
 		margin: 0 -15px;
 	}
 
+	&-item-wrap {
+		width: 25%; padding: 0 15px; float: left;
+	}
+
 	&-item {
-		width: 22.6%; float: left; height: 200px; overflow: hidden;
-		margin: 0 15px 15px;
+		width: 100%; overflow: hidden;
+		margin-bottom: 15px;
 		background-color: $dark-text;
 		transition: box-shadow ease-out .2s;
 		border: 1px solid $header-bg-color;
@@ -20,7 +24,7 @@
 			
 			box-shadow: 5px 5px 5px 0px rgba(93,64,55,0.5);
 
-			.gallery-item__img {
+			.gallery-item__link_img {
 				opacity: .5;
 				transform: scale(1.1);
 			}
@@ -29,7 +33,7 @@
 		&__link {
 			
 			&_img {
-				height: 100%;
+				height: 100%; display: block;
 				transition: all ease-in .3s;
 				cursor: pointer;
 			} 
