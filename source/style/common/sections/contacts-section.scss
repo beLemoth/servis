@@ -21,6 +21,7 @@
 		&__email {
 			&_text {
 				@include font-type($dark-text, $main-font, 18px, 1.5, 0);
+				display: inline-block;
 			}
 		}
 

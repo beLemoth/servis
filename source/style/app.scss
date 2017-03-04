@@ -66,6 +66,53 @@ p {
 	@include font-type($dark-text, $main-font, 18px, 1.5, 0);
 }
 
+.tel {
+	padding-left: 40px;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute; bottom: -1px; left: -1px;
+	}
+}
+
+.tel-mts {
+	&:before {
+		background-image: url(../img/sprite.png);
+		background-position: 0px 0px;
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.tel-vel {
+	&:before {
+		bottom: 0;
+		background-image: url(../img/sprite.png);
+		background-position: 0px -30px;
+		width: 30px;
+		height: 22px;
+	}
+}
+
+.tel-life {
+	&:before {
+		bottom: 0;
+		background-image: url(../img/sprite.png);
+		background-position: -30px -30px;
+		width: 30px;
+		height: 16px;
+		bottom: 4px;
+	}
+}
+
+.tel-stat {
+	&:before {
+		background-image: url(../img/sprite.png);
+		background-position: -30px 0px;
+		width: 30px;
+		height: 30px;
+	}
+}
 
 /* import sections */
 @import 'common/sections/*.scss'
