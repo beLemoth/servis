@@ -8,6 +8,17 @@
 
 	$(window).on('load', function () {
     	$('.preloader').delay(350).fadeOut('slow');
+
+    	// product list count
+
+    	var items = $('.prod-item-wrap');
+		if (items) {
+			var cnt = items.length;
+			var width = (cnt%4)?((cnt%5)?(100/3):(100/5)):(100/4);
+			$(items).each( function (number) {
+				$(this).css('width', width+'%');
+			});
+		};
 	});
 
 	// maps
