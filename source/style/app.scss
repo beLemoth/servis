@@ -40,7 +40,7 @@ html {
 }
 
 h1 {
-	@include font-type($dark-text, $bold-font, 48px, 1.5, 0);
+	@include font-type($dark-text, $bold-font, 64px, 1.5, 0);
 	text-transform: uppercase;
 }
 

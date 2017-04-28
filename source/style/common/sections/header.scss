@@ -93,7 +93,7 @@
 
 					&-link {
 						text-decoration: none; text-transform: uppercase; display: inline-block;
-						@include font-type($dark-text, $bold-font, 18px, 48px, 0);
+						@include font-type($dark-text, $bold-font, 22px, 48px, 0);
 					}
 				}
 
@@ -106,7 +106,4 @@
 		}
 	}
 
-	.header-bottom-main {
-		background: url('../img/intro-bg.png') left top no-repeat;
-	}
 }

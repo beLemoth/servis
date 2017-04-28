@@ -7,7 +7,7 @@
 	// preloader
 
 	$(window).on('load', function () {
-    	$('.preloader').delay(350).fadeOut('slow');
+		$('.preloader').delay(350).fadeOut('slow');
 
     	// product list count
 
@@ -20,6 +20,22 @@
 			});
 		};
 	});
+
+	// parallax
+	var intro = $('.intro');
+
+	if(intro) {
+
+		var speed = 10;		// скорость прокрутки
+        $(window).scroll(function() {
+            var yPos = 30-($(window).scrollTop() / speed); // вычисляем коэффициент 
+            // Присваиваем значение background-position
+            var coords = 'center '+ yPos + '%';
+            // Создаем эффект Parallax Scrolling
+            intro.css({ backgroundPosition: coords });
+        });
+	};
+        
 
 	// maps
 
